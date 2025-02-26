@@ -1,4 +1,4 @@
-<!-- buscador-supermercado.component.html -->
+<!-- Buscador Supermercado -->
 <section class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white py-8 px-4">
     <div class="mx-auto max-w-7xl">
       <h2 class="text-3xl font-semibold text-center mb-6">Busca el Supermercado Más Barato en Tu Zona</h2>
@@ -9,9 +9,12 @@
           <label for="categoria" class="block text-sm font-medium text-gray-900 dark:text-white">Categoría</label>
           <select id="categoria" class="bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg px-4 py-2 w-full">
             <option value="">Seleccionar Categoría</option>
+            <option value="carnes">Carnes</option>
+            <option value="pescados">Pescados</option>
             <option value="frutas">Frutas</option>
             <option value="verduras">Verduras</option>
             <option value="lacteos">Lácteos</option>
+            <option value="bollería">Bollería</option>
             <!-- Agregar más categorías -->
           </select>
         </div>
@@ -29,12 +32,28 @@
         <h3 class="text-2xl font-semibold mb-4">Resultados</h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-            <h4 class="text-xl font-semibold">Supermercado 1</h4>
-            <p class="text-gray-600 dark:text-gray-300">Precio más bajo: $10.99</p>
+            <h4 class="text-xl font-semibold">Mercadona</h4>
+            <p class="text-gray-600 dark:text-gray-300">Precio más bajo: 10.99€</p>
           </div>
           <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-            <h4 class="text-xl font-semibold">Supermercado 2</h4>
-            <p class="text-gray-600 dark:text-gray-300">Precio más bajo: $8.99</p>
+            <h4 class="text-xl font-semibold">Aldi</h4>
+            <p class="text-gray-600 dark:text-gray-300">Precio más bajo: 11.99€</p>
+          </div>
+          <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
+            <h4 class="text-xl font-semibold">Lidel</h4>
+            <p class="text-gray-600 dark:text-gray-300">Precio más bajo: 7.99€</p>
+          </div>
+          <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
+            <h4 class="text-xl font-semibold">Alcampo</h4>
+            <p class="text-gray-600 dark:text-gray-300">Precio más bajo: 6.99€</p>
+          </div>
+          <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
+            <h4 class="text-xl font-semibold">Carrefour</h4>
+            <p class="text-gray-600 dark:text-gray-300">Precio más bajo: 12.99€</p>
+          </div>
+          <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
+            <h4 class="text-xl font-semibold">Supeco</h4>
+            <p class="text-gray-600 dark:text-gray-300">Precio más bajo: 8.99€</p>
           </div>
         </div>
       </div>

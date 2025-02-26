@@ -1,4 +1,4 @@
-<!-- productos-mas-vendidos.component.html -->
+<!-- Productos más vendidos -->
 <section class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white py-8 px-4">
     <div class="mx-auto max-w-7xl">
       <h2 class="text-3xl font-semibold text-center mb-6">Productos Más Vendidos por Supermercado</h2>
@@ -8,17 +8,24 @@
         <div class="flex space-x-4">
           <select class="bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg px-4 py-2">
             <option value="">Seleccionar Categoría</option>
+            <option value="carnes">Carnes</option>
+            <option value="pescados">Pescados</option>
             <option value="frutas">Frutas</option>
             <option value="verduras">Verduras</option>
             <option value="lacteos">Lácteos</option>
+            <option value="bollería">Bollería</option>
+
             <!-- Agrega más categorías según tu aplicación -->
           </select>
   
           <select class="bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg px-4 py-2">
             <option value="">Seleccionar Supermercado</option>
-            <option value="supermercado-1">Supermercado 1</option>
-            <option value="supermercado-2">Supermercado 2</option>
-            <option value="supermercado-3">Supermercado 3</option>
+            <option value="supermercado-1">Lidl</option>
+            <option value="supermercado-2">Mercadona</option>
+            <option value="supermercado-3">Carrefour</option>
+            <option value="supermercado-4">Hipercor</option>
+            <option value="supermercado-5">Aldi</option>
+            <option value="supermercado-6">Carrefour</option>
           </select>
         </div>
         <button class="bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-600">Aplicar Filtros</button>
@@ -26,23 +33,96 @@
   
       <!-- Productos más vendidos -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+          <!-- Producto 1: Aceite -->
         <div class="bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-          <img src="producto-imagen.jpg" alt="Producto" class="w-full h-48 object-cover">
+          <div class="flex justify-center p-4">
+            <img src="aceite.png" alt="aceite" class="rounded-lg w-64 h-48 object-cover shadow-lg">
+          </div>
           <div class="p-4">
-            <h3 class="text-xl font-semibold">Producto 1</h3>
-            <p class="text-gray-600 dark:text-gray-300">Descripción corta del producto.</p>
-            <p class="text-blue-600 mt-2">Precio: $12.99</p>
+            <h3 class="text-xl font-semibold">Aceite de oliva Virgen Extra</h3>
+            <p class="text-gray-600 dark:text-gray-300">Garrafa de Aceite de oliva virgen extra 5l</p>
+            <p class="text-blue-600 mt-2">Precio: 25,95€</p>
           </div>
         </div>
-        <!-- Repite el bloque de producto para otros productos -->
+        <!-- Producto 2: Plátanos -->
         <div class="bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-          <img src="producto-imagen.jpg" alt="Producto" class="w-full h-48 object-cover">
+          <div class="flex justify-center p-4">
+            <img src="platanos.jpg" alt="plátanos" class="rounded-lg w-64 h-48 object-cover shadow-lg">
+          </div>
           <div class="p-4">
-            <h3 class="text-xl font-semibold">Producto 2</h3>
-            <p class="text-gray-600 dark:text-gray-300">Descripción corta del producto.</p>
-            <p class="text-blue-600 mt-2">Precio: $9.99</p>
+            <h3 class="text-xl font-semibold">Plátanos</h3>
+            <p class="text-gray-600 dark:text-gray-300">Plátanos de Canarias 1kg</p>
+            <p class="text-blue-600 mt-2">Precio: 1,49€</p>
           </div>
         </div>
+        <!-- Producto 3: Alubias -->
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+          <div class="flex justify-center p-4">
+            <img src="alubias.jpg" alt="alubias" class="rounded-lg w-64 h-48 object-cover shadow-lg">
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Alubia</h3>
+            <p class="text-gray-600 dark:text-gray-300">Alubia roja 1 kg</p>
+            <p class="text-blue-600 mt-2">Precio: 2,90€</p>
+          </div>
+        </div>
+        <!-- Producto 4: Queso -->
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+          <div class="flex justify-center p-4">
+            <img src="queso.jpg" alt="queso" class="rounded-lg w-64 h-48 object-cover shadow-lg">
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Queso tetilla de vaca</h3>
+            <p class="text-gray-600 dark:text-gray-300">Queso tetilla de vaca</p>
+            <p class="text-blue-600 mt-2">Precio: 7,04€</p>
+          </div>
+        </div>
+        <!-- Producto 5: Monster -->
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+          <div class="flex justify-center p-4">
+            <img src="monster.jpg" alt="monster" class="rounded-lg w-64 h-48 object-cover shadow-lg">
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Monster</h3>
+            <p class="text-gray-600 dark:text-gray-300">Bebida energética ultra watermelon Monster lata 500 ml</p>
+            <p class="text-blue-600 mt-2">Precio: 1,45€</p>
+          </div>
+        </div>
+        <!-- Producto 6: Pollo -->
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+          <div class="flex justify-center p-4">
+            <img src="pollo.jpg" alt="pollo" class="rounded-lg w-64 h-48 object-cover shadow-lg">
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Pechugas enteras de Pollo</h3>
+            <p class="text-gray-600 dark:text-gray-300">Pechuga enteras de pollo eroski, 3-5 uds, bandeja peso aprox. 1.1 kg</p>
+            <p class="text-blue-600 mt-2">Precio: 6,24€</p>
+          </div>
+        </div>
+        <!-- Producto 7: Revoltosa -->
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+          <div class="flex justify-center p-4">
+            <img src="revoltosa.jpg" alt="revoltosa" class="rounded-lg w-64 h-48 object-cover shadow-lg">
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Refresco de naranja </h3>
+            <p class="text-gray-600 dark:text-gray-300">Refresco de naranja Revoltosa 2 l</p>
+            <p class="text-blue-600 mt-2">Precio: 0,71€</p>
+          </div>
+        </div>
+        <!-- Producto 8: Pistachos -->
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+          <div class="flex justify-center p-4">
+            <img src="pistachos.jpg" alt="pistachos" class="rounded-lg w-64 h-48 object-cover shadow-lg">
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Pistachos</h3>
+            <p class="text-gray-600 dark:text-gray-300">Pistachos tostados IFA ELIGES 125 g</p>
+            <p class="text-blue-600 mt-2">Precio: 1,49€</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
