@@ -1,0 +1,47 @@
+<!-- header.component.html -->
+<header class="bg-blue-300 dark:bg-gray-400 text-gray-900 dark:text-white p-4">
+  <div class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <div class="flex lg:flex-1">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">CesTicket</span>
+        <img class="h-22 w-auto block" src="logo.svg" alt="Logo">
+      </a>
+    </div>
+
+    <!-- Menú en pantallas grandes -->
+    <div class="hidden lg:flex lg:gap-x-12">
+      <button (click)="home()" class="block rounded-lg px-3 py-2 text-base font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition">Inicio</button>
+      <button (click)="Productos()" class="block rounded-lg px-3 py-2 text-base font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition">Productos Más Baratos</button>
+      <button (click)="Buscador()" class="block rounded-lg px-3 py-2 text-base font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition">Buscador Supermercados</button>
+      <button (click)="login()" class="block rounded-lg px-3 py-2 text-base font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition">Login</button>
+    </div>
+
+    <!-- Toggle theme en pantallas grandes -->
+    <div class="ml-auto hidden lg:block">
+      <app-toggle-theme></app-toggle-theme>
+    </div>
+    
+    <!-- Botón menú móvil -->
+    <button #desplegableMovil type="button" (click)="desplegar()" class="lg:hidden text-gray-900 dark:text-white focus:outline-none">
+      <svg #iconoMenu class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+      <svg #cerrarMenu class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Menú móvil -->
+    <div #menuMovil class="hidden fixed inset-0 bg-gray-900 bg-opacity-90 z-50 flex flex-col items-center justify-center space-y-6">
+      <a href="/" class="text-white text-xl font-semibold hover:text-gray-300">Inicio</a>
+      <a href="/productosBaratos" class="text-white text-xl font-semibold hover:text-gray-300">Productos Más Baratos</a>
+      <a href="/buscadorSupermercado" class="text-white text-xl font-semibold hover:text-gray-300">Buscador Supermercados</a>
+      <a href="/login" class="text-white text-xl font-semibold hover:text-gray-300">Login</a>
+    </div>
+  </div>
+
+  <!-- Toggle theme fuera del menú móvil, solo visible en pantallas móviles -->
+  <div class="lg:hidden mt-4 mx-auto text-right">
+    <app-toggle-theme></app-toggle-theme>
+  </div>
+</header>
